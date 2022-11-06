@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap');
+
+/* Animation for moving components and items from 150px to the right to its original position and also its opacity */
+@keyframes trans {
+  from {
+    opacity: 0.5;
+    transform: translate(150px, 0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+/* Animation for moving components and items from 1000% to the bottom, to its original position and also its opacity */
+@keyframes trans-watch-list {
+  from {
+    opacity: 0;
+    transform: translate(0, 1000%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+/* This is for scrolling horizontally with the vertical scroll hidden */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* This makes the horizontal scroll bar withless and transparent */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+body{
+  background: rgba(219, 213, 213, 0.15);
+  background-size: contain;
+  height: 100vh;
+  color: #fff;
+}
+
+.heading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 170px;
+}
+
+.home-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixed{
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 300;
+  animation-name: trans;
+  animation-duration: 3s;
+}
+
+.instruction-div{
+  background: rgb(133, 132, 132);
+  width: 50%;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.error-button{
+  font-size: 1.5rem;
+}
+
+.signin{
+  text-align: center;
+  color: rgb(109, 103, 103);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.signup{
+  text-align: center;
+  color: rgb(109, 103, 103);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.sign-link{
+  color: rgb(26, 26, 188);
+  font-weight: 700;
+}
+
+.label{
+  display: block;
+  font-size: 1.2em;
+}
+
+.inp{
+  font-size: 1.4em;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 40px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin-right: -5px;
+  outline: none;
+  padding-top: 10px;
+}
+
+.signin-button{
+  margin-top: 25px;
+  width: 350px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 1.5em;
+}
+
+.span-red {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.movie-icon{
+  margin-left: 5px;
+  font-size: 1.2em;
+}
+
+.info-icon{
+  font-size: 1.5em;
+  background-color: black;
+  padding: 10px;
+  border-radius: 100%;
+  color: white
+}
+
+.info-icon:hover{
+  transform: scale(1.1);
+  background: white;
+  color: black;
+  border: 1px solid grey;
+}
+
+.info-div{
+  display: none;
+}
+
+.search-icon-style {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.watch-icon-style {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.button-icon{
+  margin-left: 75px;
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(105, 102, 102);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button-icon:hover{
+  color: black;
+  background: rgb(215, 206, 206);
+}
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  animation-name: trans;
+  animation-duration: 3s;
+}
+
+.sub-icons {
+  margin-left: 300px;
+}
+
+.search-icon {
+  margin-left: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  transform: scale(1.3);
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.search-icon:focus {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.watch-icon {
+  margin-left: 75px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.watch-icon:hover {
+  transform: scale(1.3);
+}
+
+.watch-icon:active {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.house-icon:hover {
+  transform: scale(1.3);
+}
+
+.house-icon:active {
+  color: rgba(244, 7, 7, 0.7);
+}
+
+.house-icon {
+  margin-left: 75px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.search {
+  margin-right: 450px;
+}
+
+.input {
+  font-size: 1.5em;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 40px;
+  border: none;
+  padding: 5px 220% 10px 25px;
+  outline: none;
+  /* visibility: hidden; */
+  transition: all 0.8s;
+}
+
+.inputv {
+  font-size: 1.5em;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 40px;
+  /* text-align: left; */
+  border: none;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin-right: -5px;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.movie{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.filmreel .row {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+h2{
+  margin-bottom: 20px;
+  z-index: 100;
+  margin-left: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(0,0,0,1);
+}
+
+.movie-h2{
+  animation-name: trans;
+  animation-duration: 3s;
+}
+
+img{
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  /* display: none; */
+}
+
+.img-movie{
+  top: 50px;
+  display: flex;
+  column-gap: 35px;
+}
+
+.wrapper{
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: all 0.3s ease-in-out;
+  animation-name: trans;
+  animation-duration: 2s;
+}
+
+.wrapper:hover{
+  transform: translate(0, -5%);
+}
+
+.button {
+  position: absolute;
+  bottom: 30%;
+  left: 0px;
+  right: 0px;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  background: rgb(192, 15, 15);
+  opacity: 0;
+  transition: bottom 0.4s ease;
+  cursor: pointer;
+}
+
+.delete{
+  position: absolute;
+  bottom: 30%;
+  left: 0px;
+  right: 0px;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  background: rgb(192, 15, 15);
+  opacity: 0;
+  transition: bottom 0.4s ease;
+  cursor: pointer;
+}
+
+.wrapper:hover .button{
+  position: absolute;
+  bottom: 15%;
+  left: 0px;
+  right: 0px;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px 15px;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: #2230b1;
+  color: wheat;
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.1s ease-in, background 0s, border 0s;
+}
+
+.wrapper:hover .delete{
+  position: absolute;
+  bottom: 15%;
+  left: 0px;
+  right: 0px;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px 15px;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: #c80909;
+  color: wheat;
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.5s, background 0s, border 0s;
+}
+
+.wrapper:hover .button:active{
+  background: rgba(15, 30, 192, 0.3);
+  border: 1px solid #059dbb;
+  color: wheat;
+  transform: translate(7px, 7px);
+  box-shadow: none;
+}
+
+.btn {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+}
+
+.wrapper:hover img{
+  opacity: 0.9;
+  border-radius: 25px;
+  transform: translate(0, -2%);
+}
+
+.container {
+  margin-top: 190px;
+}
+
+.container-2 {
+  animation-name: trans-watch-list;
+  animation-duration: 1.5s;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-2-style {
+  margin-top: 200px;
+}
+
+.empty-message{
+  display: none;
+}
+
+.empty-message-display{
+  display: inline-block;
+}
+
+.errorpage{
+  text-align: center;
+}
+
+.error-h1{
+  color: rgb(149, 145, 145);
+  font-size: 150px;
+}
