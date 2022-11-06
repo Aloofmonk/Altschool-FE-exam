@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import { Helmet } from 'react-helmet-async';
 
 const Signin = () => {
   const [email, setEmail] = useState('');
@@ -23,6 +24,11 @@ const Signin = () => {
 
   return (
     <div className='signin'>
+      <Helmet>
+          <title>Signin</title>
+          <meta name='description' contnent="Signin to your account" />
+          <link rel="canonical" href="/signin" />
+      </Helmet>
       
       <div>
         <h1>Sign in to your account</h1>

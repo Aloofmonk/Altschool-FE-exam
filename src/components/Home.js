@@ -5,6 +5,7 @@ import Heading from './Heading';
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {FaInfo} from 'react-icons/fa'
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -12,6 +13,11 @@ import {FaInfo} from 'react-icons/fa'
 const Home = ({display, OnDelete, cont, fav, OnTap, movies, nam, OnSearch, searchMovie, setSearchMovie, loading}) => {
   return (
     <div>
+      <Helmet>
+          <title>Home</title>
+          <meta name='description' contnent="Home movies" />
+          <link rel="canonical" href="/home" />
+      </Helmet>
 
       <div className="heading"><Heading cont={cont} nam={nam} OnSearch={OnSearch} searchMovie={searchMovie} setSearchMovie={setSearchMovie}/> </div>
 

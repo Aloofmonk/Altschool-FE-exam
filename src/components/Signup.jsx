@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import { Helmet } from 'react-helmet-async';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -23,6 +24,11 @@ const Signup = () => {
 
   return (
     <div className='signup'>
+      <Helmet>
+          <title>Signup</title>
+          <meta name='description' contnent="Signup to get a free account" />
+          <link rel="canonical" href="/signup" />
+      </Helmet>
         
       <div>
         <h1 className='text-2xl font-bold py-2'>Sign up for a free account</h1>
