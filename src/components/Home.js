@@ -6,13 +6,14 @@ import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {FaInfo} from 'react-icons/fa'
 import { Helmet } from 'react-helmet-async';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 
 
 const Home = ({display, OnDelete, cont, fav, OnTap, movies, nam, OnSearch, searchMovie, setSearchMovie, loading}) => {
   return (
-    <div>
+    <div className='home'>
       <Helmet>
           <title>Home</title>
           <meta name='description' contnent="Home movies" />

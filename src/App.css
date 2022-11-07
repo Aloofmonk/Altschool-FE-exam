@@ -58,6 +58,8 @@ body{
   justify-content: space-between;
 }
 
+
+
 .fixed{
   font-family: 'Noto Sans Mono', monospace;
   font-weight: 300;
@@ -178,7 +180,7 @@ body{
 }
 
 .sub-icons {
-  margin-left: 300px;
+  margin-left: 15%;
 }
 
 .search-icon {
@@ -227,7 +229,7 @@ body{
 }
 
 .search {
-  margin-right: 450px;
+  margin-right: 250px;
 }
 
 .input {
@@ -235,17 +237,17 @@ body{
   font-family: 'Noto Sans', sans-serif;
   border-radius: 40px;
   border: none;
-  padding: 5px 220% 10px 25px;
+  padding: 5px 150% 10px 25px;
   outline: none;
   /* visibility: hidden; */
   transition: all 0.8s;
 }
 
-.inputv {
+ .inputv {
   font-size: 1.5em;
   font-family: 'Noto Sans', sans-serif;
   border-radius: 40px;
-  /* text-align: left; */
+  text-align: left;
   border: none;
   padding-bottom: 10px;
   padding-left: 25px;
@@ -254,7 +256,7 @@ body{
   visibility: hidden;
   opacity: 0;
   transition: all 0.8s;
-}
+} 
 
 .movie{
   margin-right: 15px;

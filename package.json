@@ -10,6 +10,7 @@
     "firebase": "^9.13.0",
     "json-server": "^0.17.0",
     "react": "next",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-bootstrap": "^2.5.0",
     "react-dom": "next",
     "react-error-boundary": "^3.1.4",
