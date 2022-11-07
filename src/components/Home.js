@@ -6,8 +6,6 @@ import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {FaInfo} from 'react-icons/fa'
 import { Helmet } from 'react-helmet-async';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 
 
 
