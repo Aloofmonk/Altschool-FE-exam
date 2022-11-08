@@ -17,7 +17,7 @@
 @keyframes trans-watch-list {
   from {
     opacity: 0;
-    transform: translate(0, 1000%);
+    transform: translate(0, 50%);
   }
 
   to {
@@ -57,8 +57,6 @@ body{
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .fixed{
   font-family: 'Noto Sans Mono', monospace;
@@ -120,6 +118,11 @@ body{
   font-size: 1.5em;
 }
 
+.signin-button:active{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 .span-red {
   color: rgba(244, 7, 7, 0.7);
 }
@@ -176,7 +179,7 @@ body{
   justify-content: space-evenly;
   gap: 50px;
   animation-name: trans;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
 }
 
 .sub-icons {
@@ -268,6 +271,7 @@ body{
   overflow-y: hidden;
   white-space: nowrap;
   padding-top: 20px;
+  /* animation-name: trans; */
 }
 
 h2{
@@ -293,6 +297,7 @@ img{
   top: 50px;
   display: flex;
   column-gap: 35px;
+  width: 100wv;
 }
 
 .wrapper{
@@ -396,17 +401,13 @@ img{
 }
 
 .container {
-  margin-top: 190px;
+  margin-top: 140px;
 }
 
 .container-2 {
   animation-name: trans-watch-list;
   animation-duration: 1.5s;
   transition: all 0.5s ease-in-out;
-}
-
-.container-2-style {
-  margin-top: 200px;
 }
 
 .empty-message{
@@ -424,4 +425,9 @@ img{
 .error-h1{
   color: rgb(149, 145, 145);
   font-size: 150px;
+}
+
+.fav-style{
+  animation-name: trans;
+  animation-delay: 20s;
 }
