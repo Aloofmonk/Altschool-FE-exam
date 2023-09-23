@@ -7,6 +7,8 @@ import {BsHouseFill} from 'react-icons/bs'
 import {BiExit} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
+import HamburgerMenu from './HamburgerMenu';
+
 
 
 
@@ -35,6 +37,7 @@ const Heading = ({searchMovie, setSearchMovie, OnSearch, nam}) => {
 
             <h1 className='fixed'>{<span>Film<span className='span-red'>Reel</span></span>}<TbMovie className={'movie-icon'}/></h1>
             <div className="icons">
+              <HamburgerMenu/>
               <Search nam={nam} searchMovie={searchMovie} setSearchMovie={setSearchMovie}/>
               <div className="sub-icons">
                 <FaSearch title='Search' onClick={() => OnSearch(nam)} className={`search-icon ${nam === 'input' && 'search-icon-style'}`}/>

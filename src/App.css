@@ -269,7 +269,7 @@ body {
   padding-left: 25px;
   margin-right: 5px;
   outline: none;
-  visibility: hidden;
+  /* visibility: hidden; */
   opacity: 0;
   transition: all 0.8s;
 }
@@ -442,4 +442,105 @@ img {
 .error-h1 {
   color: rgb(149, 145, 145);
   font-size: 150px;
+}
+
+.hamburger-menu {
+  display: none
+}
+
+@media (max-width: 767px) {
+  img {
+      border-radius: 25px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+      width: 160px;
+      height: 200px;
+  }
+
+  /* HamburgerMenu.css */
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60px;
+    /* Adjust as needed */
+    position: relative;
+    left: 650px;
+    bottom: 20px;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    /* Adjust color as needed */
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 15px 0 0 15px;
+    margin-top: 52px;
+    position: absolute;
+    top: 0;
+    left: 118px;
+    /* Off-canvas initially */
+    background-color: black;
+    /* Adjust background color as needed */
+    width: 200px;
+    /* Adjust menu width as needed */
+    height: 350px;
+    transition: 0.4s
+  }
+
+  .menu-links li {
+    padding: 10px 20px;
+    font-size: 18px;
+    /* Adjust font size as needed */
+    border-bottom: 1px solid #ddd;
+    /* Add a separator */
+  }
+
+  .open .menu-links {
+    /* position: absolute; */
+    left: -83px;
+    /* z-index: 10000; */
+  }
+
+  .sub-icons{
+    visibility: hidden;
+  }
+
+  .inputv {
+    font-size: 1.0em;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 40px;
+    /* text-align: left; */
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 100px;
+    margin-right: 5px;
+    outline: none;
+    /* visibility: hidden; */
+    opacity: 1;
+    transition: all 0.8s;
+  }
+
+}
+
+@media (max-width: 695px) {
+  .hamburger-menu{
+    padding-right: 10px;
+  }
 }

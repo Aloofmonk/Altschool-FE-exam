@@ -12,7 +12,7 @@ const MovieList = ({movies, OnTap, OnDelete, title, loading}) => {
 
           <div className="wrapper">
             <img key={index} src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="movie" />
-            {movie.poster_path !== null ?<button onClick={ title !== 'Movies' ?() => OnDelete(movie) :() => OnTap(movie) } className={`btn ${ title !== 'Movies' ? 'delete' : 'button'}`}>{ title === 'Movies' ? 'Add to Watch List' : 'DELETE'}</button> : ''}
+            {movie.poster_path !== null ?<button onClick={ title !== 'Movies' ?() => OnDelete(movie) :() => OnTap(movie) } className={`btn ${ title !== 'Movies' ? 'delete' : 'button'}`}>{ title === 'Movies' ? 'Add' : 'DELETE'}</button> : ''}
           </div>
                  
         ))}
