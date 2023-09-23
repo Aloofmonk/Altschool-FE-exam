@@ -6,7 +6,7 @@ import MovieList from './MovieList'
 const Favorites = ({OnDelete, cont, fav, display, nam, OnSearch, searchMovie, setSearchMovie}) => {
   return (
     <div>
-        {/* <div className="heading"><Heading cont={cont} nam={nam} OnSearch={OnSearch} searchMovie={searchMovie} setSearchMovie={setSearchMovie}/></div> */}
+        
     <div className={`container-2 ${cont === 'container-watch-list' && 'container-2-style'}`}>
         <h2>Watch List</h2>
         <div className="row movie">
