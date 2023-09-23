@@ -6,10 +6,30 @@ import {FaEye} from 'react-icons/fa'
 import {BsHouseFill} from 'react-icons/bs'
 import {BiExit} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 
 
 
 const Heading = ({searchMovie, setSearchMovie, OnSearch, nam}) => {
+
+  const location = useLocation();
+  const locat = useLocation();
+
+  if (location.pathname === '/'){
+    return (
+      <div className='heading-null'>
+
+      </div>
+    )
+  }
+  if (locat.pathname === '/signup'){
+    return (
+      <div className='heading-null'>
+
+      </div>
+    )
+  }
+
   return (
     <div className="heading">
 

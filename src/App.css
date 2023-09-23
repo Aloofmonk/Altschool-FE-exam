@@ -13,11 +13,12 @@
     transform: translate(0px, 0px);
   }
 }
+
 /* Animation for moving components and items from 1000% to the bottom, to its original position and also its opacity */
 @keyframes trans-watch-list {
   from {
     opacity: 0;
-    transform: translate(0, 50%);
+    transform: translate(0, 1000%);
   }
 
   to {
@@ -25,80 +26,95 @@
     transform: translate(0px, 0px);
   }
 }
+
 /* This is for scrolling horizontally with the vertical scroll hidden */
 html {
   overflow: scroll;
   overflow-x: hidden;
 }
+
 /* This makes the horizontal scroll bar withless and transparent */
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-body{
-  background: rgba(219, 213, 213, 0.15);
+body {
+  /* background: rgba(219, 213, 213, 0.15); */
   background-size: contain;
   height: 100vh;
   color: #fff;
 }
 
-.heading{
+.heading {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.88);
-  height: 170px;
+  height: 95px;
+  margin-bottom: 20000px;
 }
 
-.home-header{
+.heading-null {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: white;
+  height: 95px;
+  margin-bottom: 20000px;
+}
+
+.home-header {
   display: flex;
   justify-content: space-between;
 }
 
-.fixed{
+.fixed {
   font-family: 'Noto Sans Mono', monospace;
   font-weight: 300;
   animation-name: trans;
   animation-duration: 3s;
+  font-size: 20px;
 }
 
-.instruction-div{
+.instruction-div {
   background: rgb(133, 132, 132);
   width: 50%;
   font-weight: 600;
   font-size: 1.8rem;
 }
 
-.error-button{
+.error-button {
   font-size: 1.5rem;
 }
 
-.signin{
+.signin {
   text-align: center;
   color: rgb(109, 103, 103);
   font-family: 'Noto Sans', sans-serif;
 }
 
-.signup{
+.signup {
   text-align: center;
   color: rgb(109, 103, 103);
   font-family: 'Noto Sans', sans-serif;
 }
 
-.sign-link{
+.sign-link {
   color: rgb(26, 26, 188);
   font-weight: 700;
 }
 
-.label{
+.label {
   display: block;
   font-size: 1.2em;
 }
 
-.inp{
+.inp {
   font-size: 1.4em;
   font-family: 'Noto Sans', sans-serif;
   border-radius: 40px;
@@ -109,7 +125,7 @@ body{
   padding-top: 10px;
 }
 
-.signin-button{
+.signin-button {
   margin-top: 25px;
   width: 350px;
   padding: 15px 0;
@@ -118,21 +134,16 @@ body{
   font-size: 1.5em;
 }
 
-.signin-button:active{
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
 .span-red {
   color: rgba(244, 7, 7, 0.7);
 }
 
-.movie-icon{
+.movie-icon {
   margin-left: 5px;
   font-size: 1.2em;
 }
 
-.info-icon{
+.info-icon {
   font-size: 1.5em;
   background-color: black;
   padding: 10px;
@@ -140,14 +151,14 @@ body{
   color: white
 }
 
-.info-icon:hover{
+.info-icon:hover {
   transform: scale(1.1);
   background: white;
   color: black;
   border: 1px solid grey;
 }
 
-.info-div{
+.info-div {
   display: none;
 }
 
@@ -159,37 +170,37 @@ body{
   color: rgba(244, 7, 7, 0.7);
 }
 
-/* .button-icon{
+.button-icon {
   margin-left: 75px;
   font-size: 25px;
   cursor: pointer;
   color: rgb(105, 102, 102);
   text-decoration: none;
   font-weight: 600;
-  color: blue;
-} */
+}
 
-.button-icon:hover{
+.button-icon:hover {
   color: black;
   background: rgb(215, 206, 206);
 }
 
 .icons {
-  margin-top: 50px;
+  margin-top: 1.2em;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
   gap: 50px;
   animation-name: trans;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
+  justify-content: space-around;
 }
 
 .sub-icons {
-  margin-left: 15%;
+  margin-left: 30px;
 }
 
 .search-icon {
   margin-left: 50px;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -204,7 +215,7 @@ body{
 
 .watch-icon {
   margin-left: 75px;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   color: white;
 }
@@ -227,41 +238,43 @@ body{
 
 .house-icon {
   margin-left: 75px;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   color: white;
 }
 
 .search {
-  margin-right: 250px;
+  width: 300px;
 }
 
 .input {
-  font-size: 1.5em;
+  font-size: 1.0em;
   font-family: 'Noto Sans', sans-serif;
   border-radius: 40px;
   border: none;
-  padding: 5px 150% 10px 25px;
+  padding: 3px 100% 3px 25px;
   outline: none;
+  /* visibility: hidden; */
   transition: all 0.8s;
 }
 
- .inputv {
-  font-size: 1.5em;
+.inputv {
+  font-size: 1.0em;
   font-family: 'Noto Sans', sans-serif;
   border-radius: 40px;
-  text-align: left;
+  /* text-align: left; */
   border: none;
-  padding-bottom: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 25px;
-  margin-right: -5px;
+  margin-right: 5px;
   outline: none;
   visibility: hidden;
   opacity: 0;
   transition: all 0.8s;
-} 
+}
 
-.movie{
+.movie {
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -271,53 +284,45 @@ body{
   overflow-y: hidden;
   white-space: nowrap;
   padding-top: 20px;
-  /* animation-name: trans; */
-  /* box-shadow: 2px 0 rgba(0, 0, 0, 0.05); */
-  /* background: blur(4px); */
 }
 
-h2{
+h2 {
   margin-bottom: 20px;
   z-index: 100;
   margin-left: 10px;
   font-family: 'Noto Sans', sans-serif;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
 }
 
-.movie-h2{
+.movie-h2 {
   animation-name: trans;
   animation-duration: 3s;
 }
 
-img{
+img {
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  object-fit: contain;
+  /* display: none; */
+  width: 200px;
+  height: 280px;
 }
 
-.img-movie{
+.img-movie {
   top: 50px;
   display: flex;
   column-gap: 35px;
-  width: 100wv;
 }
 
-img::after{
-  width: 300px;
-}
-
-.wrapper{
+.wrapper {
   position: relative;
   padding-bottom: 10px;
   padding-top: 10px;
   transition: all 0.3s ease-in-out;
   animation-name: trans;
   animation-duration: 2s;
-  box-sizing: border-box;
 }
 
-.wrapper:hover{
+.wrapper:hover {
   transform: translate(0, -5%);
 }
 
@@ -337,7 +342,7 @@ img::after{
   cursor: pointer;
 }
 
-.delete{
+.delete {
   position: absolute;
   bottom: 30%;
   left: 0px;
@@ -353,7 +358,7 @@ img::after{
   cursor: pointer;
 }
 
-.wrapper:hover .button{
+.wrapper:hover .button {
   position: absolute;
   bottom: 15%;
   left: 0px;
@@ -371,7 +376,7 @@ img::after{
   transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.1s ease-in, background 0s, border 0s;
 }
 
-.wrapper:hover .delete{
+.wrapper:hover .delete {
   position: absolute;
   bottom: 15%;
   left: 0px;
@@ -389,7 +394,7 @@ img::after{
   transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.5s, background 0s, border 0s;
 }
 
-.wrapper:hover .button:active{
+.wrapper:hover .button:active {
   background: rgba(15, 30, 192, 0.3);
   border: 1px solid #059dbb;
   color: wheat;
@@ -402,15 +407,14 @@ img::after{
   font-weight: 800;
 }
 
-.wrapper:hover img{
+.wrapper:hover img {
   opacity: 0.9;
   border-radius: 25px;
   transform: translate(0, -2%);
-  animation-name: trans;
 }
 
 .container {
-  margin-top: 140px;
+  margin-top: 80px;
 }
 
 .container-2 {
@@ -419,24 +423,23 @@ img::after{
   transition: all 0.5s ease-in-out;
 }
 
-.empty-message{
+.container-2-style {
+  margin-top: 200px;
+}
+
+.empty-message {
   display: none;
 }
 
-.empty-message-display{
+.empty-message-display {
   display: inline-block;
 }
 
-.errorpage{
+.errorpage {
   text-align: center;
 }
 
-.error-h1{
+.error-h1 {
   color: rgb(149, 145, 145);
   font-size: 150px;
-}
-
-.fav-style{
-  animation-name: trans;
-  animation-delay: 20s;
 }

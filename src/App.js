@@ -15,6 +15,8 @@ import {ErrorBoundary} from 'react-error-boundary'
 import ErrorBound from './components/ErrorBound';
 import Instruction from './components/Instruction';
 import Info from './components/Info';
+import Heading from './components/Heading';
+
 
 
 function App() {
@@ -91,12 +93,12 @@ function App() {
           
 
           <div className='container'>
+            <div className="heading"><Heading cont={cont} nam={nam} OnSearch={OnSearch} searchMovie={searchMovie} setSearchMovie={setSearchMovie}/></div>
             <div>
               <AuthContextProvider>
             <Routes>
               <Route path='/' element={<Signin />} />
               <Route path='/signup' element={<Signup />} />
-              
               <Route
                 path='/home'
                 element={
