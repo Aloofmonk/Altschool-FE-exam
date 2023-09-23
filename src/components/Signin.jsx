@@ -15,6 +15,7 @@ const Signin = () => {
     setError('')
     try {
       await signIn(email, password)
+      alert(`Welcome ${email}`)
       navigate('/home')
     } catch (e) {
       setError(e.message)

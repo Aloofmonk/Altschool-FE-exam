@@ -159,14 +159,15 @@ body{
   color: rgba(244, 7, 7, 0.7);
 }
 
-.button-icon{
+/* .button-icon{
   margin-left: 75px;
   font-size: 25px;
   cursor: pointer;
   color: rgb(105, 102, 102);
   text-decoration: none;
   font-weight: 600;
-}
+  color: blue;
+} */
 
 .button-icon:hover{
   color: black;
@@ -242,7 +243,6 @@ body{
   border: none;
   padding: 5px 150% 10px 25px;
   outline: none;
-  /* visibility: hidden; */
   transition: all 0.8s;
 }
 
@@ -272,6 +272,8 @@ body{
   white-space: nowrap;
   padding-top: 20px;
   /* animation-name: trans; */
+  /* box-shadow: 2px 0 rgba(0, 0, 0, 0.05); */
+  /* background: blur(4px); */
 }
 
 h2{
@@ -290,7 +292,8 @@ h2{
 img{
   border-radius: 25px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-  /* display: none; */
+  box-sizing: border-box;
+  object-fit: contain;
 }
 
 .img-movie{
@@ -300,6 +303,10 @@ img{
   width: 100wv;
 }
 
+img::after{
+  width: 300px;
+}
+
 .wrapper{
   position: relative;
   padding-bottom: 10px;
@@ -307,6 +314,7 @@ img{
   transition: all 0.3s ease-in-out;
   animation-name: trans;
   animation-duration: 2s;
+  box-sizing: border-box;
 }
 
 .wrapper:hover{
@@ -398,6 +406,7 @@ img{
   opacity: 0.9;
   border-radius: 25px;
   transform: translate(0, -2%);
+  animation-name: trans;
 }
 
 .container {
