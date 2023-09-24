@@ -12,7 +12,6 @@ function HamburgerMenu() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
       <div className="menu-icon" onClick={toggleMenu}>
@@ -22,8 +21,8 @@ function HamburgerMenu() {
       </div>
       <ul className="menu-links">
 		{/* <Search onClick={() => OnSearch(nam)} nam={nam} searchMovie={searchMovie} setSearchMovie={setSearchMovie}/> */}
-		<Link to="/Home"><BsHouseFill title='Home' className={`house-icon`}/></Link>  
-		<Link to="/Favorites"><FaEye title='Watch-List' className='watch-icon'/></Link>
+		<Link to="/Home"><BsHouseFill onClick={toggleMenu} title='Home' className={`house-icon`}/></Link>  
+		<Link to="/Favorites"><FaEye onClick={toggleMenu} title='Watch-List' className='watch-icon'/></Link>
 		<Link to="/">
 			<BiExit title='Log-out' className='watch-icon'/>
 		</Link>

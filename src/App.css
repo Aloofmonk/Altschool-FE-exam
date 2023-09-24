@@ -50,7 +50,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100000;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.88);
   height: 95px;
@@ -561,7 +561,7 @@ img {
     align-items: flex-start;
     width: 60px;
     /* Adjust as needed */
-    position: relative;
+    /* position: relative; */
     left: 85vw;
     bottom: 20px;
   }
@@ -597,7 +597,7 @@ img {
     width: 200px;
     /* Adjust menu width as needed */
     height: 350px;
-    transition: 0.4s
+    transition: 0.4s;
   }
   
   .menu-links li {
