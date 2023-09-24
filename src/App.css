@@ -314,6 +314,7 @@ img {
   column-gap: 35px;
 }
 
+
 .wrapper {
   position: relative;
   padding-bottom: 10px;
@@ -630,8 +631,10 @@ img {
     transition: all 0.8s;
   }
 
-    .search {
-      /* width: 3px; */
-    }
+  .img-movie {
+    top: 50px;
+    display: flex;
+    column-gap: 45px;
+  }
   
 }
