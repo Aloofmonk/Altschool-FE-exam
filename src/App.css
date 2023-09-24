@@ -634,7 +634,7 @@ img {
   .img-movie {
     top: 50px;
     display: flex;
-    column-gap: 45px;
+    column-gap: 100px;
   }
   
 }
