@@ -295,6 +295,7 @@ h2 {
   color: rgba(0, 0, 0, 1);
 }
 
+
 .movie-h2 {
   animation-name: trans;
   animation-duration: 3s;
@@ -436,6 +437,8 @@ img {
 .empty-message-display {
   display: inline-block;
 }
+
+
 
 .errorpage {
   text-align: center;
@@ -631,10 +634,17 @@ img {
     transition: all 0.8s;
   }
 
-  .img-movie {
-    top: 50px;
-    display: flex;
-    column-gap: 100px;
+  h2 {
+    margin-bottom: 20px;
+    z-index: 100;
+    margin-left: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    /* width: 25px; */
+  }
+
+  .width {
+    font-size: 15px;
   }
   
 }
