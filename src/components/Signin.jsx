@@ -32,7 +32,7 @@ const Signin = () => {
       </Helmet>
       
       <div>
-        <h1>Sign in to your account</h1>
+        <h1>Login to your account</h1>
         <p className='py-2'>
           Don't have an account yet?{' '}
           <Link className='sign-link' to='/signup' >

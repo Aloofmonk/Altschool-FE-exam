@@ -33,7 +33,7 @@ const Signup = () => {
       <div>
         <h1 className='text-2xl font-bold py-2'>Sign up for a free account</h1>
         <p className='py-2'>
-          Already have an account yet?{' '}
+          Already have an account?{' '}
           <Link to='/' className='sign-link'>
             Sign in.
           </Link>
