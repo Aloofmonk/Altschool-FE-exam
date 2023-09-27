@@ -27,6 +27,20 @@
   }
 }
 
+@keyframes indicator {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(25px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 /* This is for scrolling horizontally with the vertical scroll hidden */
 html {
   overflow: scroll;
@@ -241,6 +255,16 @@ body {
   font-size: 25px;
   cursor: pointer;
   color: white;
+}
+
+.arrow-icon{
+  color: black;
+  position: relative;
+  right: -90%;
+  font-size: 30px;
+  animation-name: indicator;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 .search {

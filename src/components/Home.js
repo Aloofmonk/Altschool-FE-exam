@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {FaInfo} from 'react-icons/fa'
 import { Helmet } from 'react-helmet-async';
+import {FaArrowRight} from 'react-icons/fa'
 
 
 
@@ -25,6 +26,7 @@ const Home = ({display, OnDelete, cont, fav, OnTap, movies, nam, OnSearch, searc
         <Link to="/Home/info" className='movie-h2'><FaInfo title='info' className='info-icon'/></Link>
         <Outlet />
       </div>
+      <FaArrowRight className='arrow-icon'/>
       <div className="row movie">
         <MovieList title='Movies' OnTap={OnTap} movies={movies} loading={loading}/>
       </div>
