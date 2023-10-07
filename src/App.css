@@ -670,5 +670,40 @@ img {
   .width {
     font-size: 15px;
   }
+  .button {
+    position: absolute;
+    bottom: 15%;
+    left: 0px;
+    right: 0px;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 15px;
+    opacity: 1;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #2230b1;
+    color: wheat;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.1s ease-in, background 0s, border 0s;
+  }
+
+  .delete {
+    position: absolute;
+    bottom: 15%;
+    left: 0px;
+    right: 0px;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 15px;
+    opacity: 1;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #c80909;
+    color: wheat;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out, transform 0.1s, box-shadow 0.5s, background 0s, border 0s;
+  }
   
 }
